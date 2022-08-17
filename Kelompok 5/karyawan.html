@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Login Anggota</title>
+<link rel="stylesheet" type="text/css" href="css/Login.css">
+</head>
+<body>
+    <div>
+        <link rel="stylesheet" href="style.css">  
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">Perpustakaan</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Peminjaman</a></li>
+                    <li><a href="karyawan.html">Karyawan</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    </div> 
+<center>
+
+<div class="tampilan">
+ <div class="kepala">
+<div class="logo"></div>
+<h2 class="judul">Karyawan</h2>
+</div>
+<div class="artikel">
+
+<div class="kotak">
+<p><input class="nama1" type="text" id="Nama Karyawan" value="" placeholder="Nama Karyawan"  ></p>
+<p><input class="nama2" type="text" id="Jabatan Karyawan" value="" placeholder="Jabatan Karyawan"></p>
+<p><input class="nama3" type="text" id="Status Karyawan" value="" placeholder="Status Karyawan"></p>
+
+
+<a href="" class="tbl1" onclick="submitdata()">Masuk</a>
+<a href="index.html" class="tbl2">Keluar</a>
+
+
+
+</div>
+</div>
+</center>
+<script type="text/javascript">
+    function submitdata() {
+       var nama = document.getElementById("Nama Karyawan").value;
+       var jabatan = document.getElementById("Jabatan Karyawan").value;
+       var Status = document.getElementById("Status Karyawan").value;
+   
+       alert("Nama Karyawan :" + nama + "\n Jabatan Karyawan" + jabatan + "\n Status Karyawan" + status)
+    }
+   </script>
+</body>
+</html> 

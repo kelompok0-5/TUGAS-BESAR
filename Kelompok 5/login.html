@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Login Anggota</title>
+<link rel="stylesheet" type="text/css" href="css/Login.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <link rel="stylesheet" href="style.css">  
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="">Perpustakaan</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Peminjaman</a></li>
+                    <li><a href="karyawan.html">Karyawan</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    </div> 
+<center><form method="post" action="">
+
+<div class="tampilan">
+    <div class="kepala">
+        <div class="logo"></div>
+        <h2 class="judul">Peminjaman</h2>
+</div>
+<div class="artikel">
+
+<div class="kesalahan">
+
+</div>
+
+<div class="kotak">
+    <form action="inputan.html" method="post">
+<p><input class="p1" type="text" id="NamaBuku" value="" placeholder="Nama Buku"></p>
+<p><input class="p2" type="text" id="NamaPeminjam" value="" placeholder="Nama peminjam"></p>
+<p><input class="p3" type="date" id="TanggalPeminjaman" value="" placeholder="Tanggal Peminjaman"></p>
+<a href="" class="btn" onclick="submitdata()">Simpan</a>
+    <a href="index.html" class="btn">Keluar</a>
+</form>
+</div>
+<script type="text/javascript">
+ function submitdata() {
+    var nama = document.getElementById("NamaBuku").value;
+    var peminjam = document.getElementById("NamaPeminjam").value;
+    var tglpinjam = document.getElementById("TanggalPeminjaman").value;
+
+    alert("NamaBuku :" + nama + "\n NamaPeminjam" + peminjam + "\n TanggalPeminjaman" + tglpinjam)
+ }
+</script>
+</div>
+ </div>
+</div>
+</center>
+</body>
+</html> 
